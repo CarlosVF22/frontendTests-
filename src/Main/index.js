@@ -9,7 +9,7 @@ import './main.css';
 
 function Main(props) {
     const firstGridSrc = props.firstGridSrc;
-    const json = props.json;
+    // const json = props.json;
     // const genericalpath = './../image/';
 
     return (
