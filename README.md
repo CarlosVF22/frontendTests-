@@ -1,7 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -11,60 +7,38 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 ### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 100% libreria React.js
+Mi desarrollo se basa en utilizar la libreria react.js y su herramienta React-bootstrap para crear componentes genericos, rapidos y reutilizables.
+
+Utilize create-react-app para generar este proyecto, solo se encarga de las vistas e interacción con el usuario, podemos utilizar el backend que sea requerido.
+
+El proyecto corre desde un servidor node en el puerto:3000, solo se necesita ejecutar en consola npm start para hacerlo correr.
+
+## Organización de archivos
+Para este proyecto cree una carpeta independiente por cada componente, dentro de la carpeta encontraran un index.js y su respectivo .css
+
+## Componente con función clara
+Cada componente creado solo necesita las props enviadas directamente desde la App para poder ejecutar su función y es indiferente a la cantidad, en el caso de las imagenes en el grid, se importan en el componente app las imagenes, se evian por medio de un array en las props, el componente automaticamente detecta cuantos elementos tiene el arreglo y renderiza en columnas iguales, sin importar si es 1 imagen o muchas imagenes el componente renderiza y organiza en un ROW
+
+## React-bootstrap (mi mejor amigo)
+Herramienta que agiliza mucho el flujo de trabajo al crear componentes genericos
+
+## Diseño responsive
+Los componentes y grillas se acoplan a todos los tamaños de pantalla.
+
+## Problemas leyendo el Path de la imagen desde el archivo JSON
+Para poder renderizar las imagenes en React lo que hago es importar la imagen como un componente y luego pasarlo al SRC del componente de react-bootstrap Image, el problema con el JSON surge al momento de utilizar el numero de la imagen a continuación de un PATH generico con la ubicación de la imagen, este no se renderiza, pero toda la demas infomración del json la puedo extraer con esta tecnica.
+
+Intente solucionar el problema conviertindo el JSON suministrado a .JS y exportar la data por medio de una variable, de esta manera sigo campatando toda la información del JSON, la puedo pasar por medio de react la estructura HTML pero aun asi no renderiza la imagen que se encuentra en local.
+
+Tambien intente tener las imagenes en la carpeta /public pero tampoco funciono.
