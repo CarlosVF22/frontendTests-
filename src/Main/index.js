@@ -29,15 +29,15 @@ function Main(props) {
                     </Ratio>
                 </Col>
             </Row>
-            <section className="principalProduct">
-                    {/* <Row>
+            {/* <section className="principalProduct">
+                    <Row>
                         <Col>
                             <Card>
                                 <Card.Img variant="top" src={data[12].foto}/>
                             </Card>
                         </Col>
-                    </Row> */}
-            </section>
+                    </Row>
+            </section> */}
         </main>
     );
 }
