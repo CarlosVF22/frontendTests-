@@ -7,6 +7,8 @@ import { Main } from './../Main'
 import FullImage from './../image/homeImage1.jpg';
 import Img1 from './../image/10.jpg';
 import Img2 from './../image/15.jpg';
+import Img3 from './../image/16.jpg';
+import Img4 from './../image/5.jpg';
 import Video from './../video/video.mp4';
 
 
@@ -29,7 +31,9 @@ function App() {
                 fullImages={FullImage}
                 firstGridSrc = {[
                     Img1,
-                    Img2
+                    Img2,
+                    Img3,
+                    Img4,
                 ]}
                 video={Video}
             />

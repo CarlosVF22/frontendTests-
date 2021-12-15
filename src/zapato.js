@@ -62,7 +62,7 @@ const data = [{
     "nombre": "Zapato azul3",
     "precio": 5000,
     "referencia": "G40",
-    "foto": requiere("./image/13.jpg")
+    "foto": "13.jpg"
 } ,{
     "nombre": "Zapato azul4",
     "precio": 5000,
