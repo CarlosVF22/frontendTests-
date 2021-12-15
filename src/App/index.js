@@ -8,7 +8,9 @@ import FullImage from './../image/homeImage1.jpg';
 import Img1 from './../image/10.jpg';
 import Img2 from './../image/15.jpg';
 import Img3 from './../image/16.jpg';
-import Img4 from './../image/5.jpg';
+import Img4 from './../image/14.jpg';
+import Img5 from './../image/9.jpg';
+import Img6 from './../image/17.jpg';
 import Video from './../video/video.mp4';
 
 
@@ -34,6 +36,8 @@ function App() {
                     Img2,
                     Img3,
                     Img4,
+                    Img5,
+                    Img6
                 ]}
                 video={Video}
             />

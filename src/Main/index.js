@@ -19,7 +19,7 @@ function Main(props) {
                     <Image src={props.fullImages} fluid/>
                 </Col>
                 {firstGridSrc.map(addres => (
-                    <Col className="firtsGrid">
+                    <Col xs={4} className="firtsGrid">
                         <Image src={addres}/>
                     </Col>
                 ))}
