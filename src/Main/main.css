@@ -1,5 +1,5 @@
 .fullImage img{
-    max-height: 30vh;
+    height: 40vh;
     width: 100%;
     object-fit: cover;
 }
@@ -14,4 +14,31 @@
 .videoContainer{
     width: 100vw;
     height: auto;
+}
+.firtsGrid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.secondGrid{
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.secondGrid img{
+    width: 100%;
+}
+.message{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.greySection{
+    background-color: rgb(216, 216, 216);
+    height: 10vh;
+    text-align: center;
+    padding: 1rem;
+}
+
+.socialNetworkContainer{
+    padding: 0.5rem;
 }
